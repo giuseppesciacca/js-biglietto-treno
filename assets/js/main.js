@@ -27,3 +27,8 @@ if (age <= 18) {
 /* output con due decimali */
 const rounded = totalPrice.toFixed(2);
 console.log(rounded); // prezzo arrotondato a 2 dec.
+
+/* metto i risultati nell'HTML */
+document.getElementById('age').innerHTML = `L'utente ha ${age} anni`;
+document.getElementById('distance').innerHTML = `L'utente deve percorrere ${distance} km.`;
+document.getElementById('price').innerHTML = `Il prezzo che dovrà pagare sarà ${rounded} €`;
