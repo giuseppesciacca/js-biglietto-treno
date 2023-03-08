@@ -15,13 +15,15 @@ let totalPrice = unitPrice * distance;
 
 /* IF applicazioni eventuali discount */
 if (age <= 18) {
-    totalPrice = totalPrice * 0.8;
+    totalPrice = totalPrice * 0.8; //20% sconto
     console.log(totalPrice);
 } else if (age >= 65) {
-    totalPrice = totalPrice * 0.6;
+    totalPrice = totalPrice * 0.6; //40% sconto
     console.log(totalPrice);
 } else {
-    console.log(totalPrice);
+    console.log(totalPrice); // prezzo pieno
 };
 
 /* output con due decimali */
+const rounded = totalPrice.toFixed(2);
+console.log(rounded); // prezzo arrotondato a 2 dec.
