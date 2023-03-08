@@ -11,11 +11,17 @@ const distance = prompt('Inserisci i km da percorrere:');
 
 /* prezzo totale viaggio km*price */
 const unitPrice = 0.21;
-const totalPrice = unitPrice * distance;
-
-console.log(totalPrice);
+let totalPrice = unitPrice * distance;
 
 /* IF applicazioni eventuali discount */
-
+if (age <= 18) {
+    totalPrice = totalPrice * 0.8;
+    console.log(totalPrice);
+} else if (age >= 65) {
+    totalPrice = totalPrice * 0.6;
+    console.log(totalPrice);
+} else {
+    console.log(totalPrice);
+};
 
 /* output con due decimali */
